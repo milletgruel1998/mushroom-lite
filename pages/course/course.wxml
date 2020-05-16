@@ -1,0 +1,50 @@
+<view class="course_box">
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+  <view class="course_mod">
+    <image src="../../image/user.png"></image>
+    <text class="course_name">逻辑思维训练</text>
+    <text class="course_intro">提升思考的能力</text>
+    <text class="course_grade">初级课程</text>
+  </view>
+</view>

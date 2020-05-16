@@ -1,2 +1,58 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="box">
+  <!-- 搜索框模块 -->
+  <view class="search">
+    <image src="../../image/search_icon@2x.png"></image>
+    <input placeholder="请输入课程的名称" placeholder-style="color:#ABABAB"></input>
+  </view>
+  <!-- 轮播图模块 -->
+  <view class="swiper_box">
+    <swiper>
+      <swiper-item>
+        <image mode="widthFix" src="../../image/big141000.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 推荐课程模块 -->
+  <view class="recommend">
+    <view class="recommend_top">
+      <text>推荐课程</text>
+      <image src="../../image/arrow@2x.png"></image>
+    </view>
+    <!-- 课程推荐图片区域 -->
+    <view class="recommend_img_mod">
+      <scroll-view class="recommend_img" scroll-x="true">
+        <navigator class="toPage">
+          <image src="../../image/big141000.jpg"></image>
+          <image src="../../image/big141000.jpg"></image>
+          <image src="../../image/big141000.jpg"></image>
+          <image src="../../image/big141000.jpg"></image>
+          <image src="../../image/big141000.jpg"></image>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- 热门视频模块 -->
+  <view class="hot_video">
+    <view class="hot_video_top">
+      <text>热门视频</text>
+    </view>
+    <!-- 视频区域 -->
+    <view class="hot_video_mod">
+      <view class="video_mod">
+        <image src="../../image/热门视频封面_1@2x.png"></image>
+        <text class="intro">可爱的玩偶制作教程</text>
+        <text class="watchNum">152人已观看</text>
+      </view>
+      <view class="video_mod">
+        <image src="../../image/热门视频封面_1@2x.png"></image>
+        <text class="intro">可爱的玩偶制作教程</text>
+        <text class="watchNum">152人已观看</text>
+      </view>
+      <view class="video_mod"> 
+        <image src="../../image/热门视频封面_1@2x.png"></image>
+        <text class="intro">可爱的玩偶制作教程</text>
+        <text class="watchNum">152人已观看</text>
+      </view>
+    </view>
+  </view>
+</view>
