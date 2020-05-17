@@ -1,50 +1,10 @@
 <view class="course_box">
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
-  </view>
-  <view class="course_mod">
-    <image src="../../image/user.png"></image>
-    <text class="course_name">逻辑思维训练</text>
-    <text class="course_intro">提升思考的能力</text>
-    <text class="course_grade">初级课程</text>
+  <view class="course_mod" wx:for="{{courseList}}" wx:key="id">
+    <image src="{{item.icon}}"></image>
+    <text class="course_name">{{item.title}}</text>
+    <text class="course_intro">{{item.subtitle}}</text>
+    <text class="course_grade" wx:if="{{item.level===1}}">初级课程</text>
+    <text class="course_grade" wx:elif="{{item.level===2}}">中级课程</text>
+    <text class="course_grade" wx:else="{{item.level===3}}">高级课程</text>
   </view>
 </view>

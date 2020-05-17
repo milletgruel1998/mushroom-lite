@@ -6,9 +6,9 @@
   </view>
   <!-- 轮播图模块 -->
   <view class="swiper_box">
-    <swiper>
-      <swiper-item>
-        <image mode="widthFix" src="../../image/big141000.jpg"></image>
+    <swiper indicator-dots autoplay circular interval="3000">
+      <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <image src="{{item.img_url}}"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -22,11 +22,7 @@
     <view class="recommend_img_mod">
       <scroll-view class="recommend_img" scroll-x="true">
         <navigator class="toPage">
-          <image src="../../image/big141000.jpg"></image>
-          <image src="../../image/big141000.jpg"></image>
-          <image src="../../image/big141000.jpg"></image>
-          <image src="../../image/big141000.jpg"></image>
-          <image src="../../image/big141000.jpg"></image>
+          <image wx:for="{{courseList}}" wx:key="id" src="{{item.icon}}"></image>
         </navigator>
       </scroll-view>
     </view>
@@ -38,20 +34,10 @@
     </view>
     <!-- 视频区域 -->
     <view class="hot_video_mod">
-      <view class="video_mod">
-        <image src="../../image/热门视频封面_1@2x.png"></image>
-        <text class="intro">可爱的玩偶制作教程</text>
-        <text class="watchNum">152人已观看</text>
-      </view>
-      <view class="video_mod">
-        <image src="../../image/热门视频封面_1@2x.png"></image>
-        <text class="intro">可爱的玩偶制作教程</text>
-        <text class="watchNum">152人已观看</text>
-      </view>
-      <view class="video_mod"> 
-        <image src="../../image/热门视频封面_1@2x.png"></image>
-        <text class="intro">可爱的玩偶制作教程</text>
-        <text class="watchNum">152人已观看</text>
+      <view class="video_mod" wx:for="{{hotVideoList}}" wx:key="id"> 
+        <image src="{{item.cover_photo_url}}"></image>
+        <text class="intro">{{item.name}}</text>
+        <text class="watchNum">{{item.view_count}}人已观看</text>
       </view>
     </view>
   </view>

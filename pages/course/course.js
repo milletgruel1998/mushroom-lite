@@ -1,18 +1,27 @@
 // pages/course/course.js
+import GetData from '../../utils/request'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    courseList:[] // 课程数据
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 获取课程数据
+    GetData({
+      url:"/api/course/list",
+      callback:(res)=>{
+        this.setData({
+          courseList:res
+        })
+      }
+    })
   },
 
   /**
