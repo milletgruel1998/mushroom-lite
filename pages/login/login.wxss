@@ -1,0 +1,77 @@
+page{
+  background-color: #f8f8f8;
+}
+/* logo模块 */
+.logo_mod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_mod .logo{
+  width: 212rpx;
+  height: 212rpx;
+  background-color: #fff;
+  border-radius: 42rpx;
+  margin-top: 180rpx;
+}
+.logo_mod .logo image{
+  display: inline-block;
+  width: 129rpx;
+  height: 136rpx;
+  margin: 38rpx 0 0 42rpx;
+}
+.logo_mod text:nth-child(2){
+  font-size: 48rpx;
+  color: #333;
+  margin-top: 64rpx;
+  font-weight: 700;
+}
+.logo_mod text:nth-child(3){
+  font-size: 26rpx;
+  color: #a8a8a8;
+  margin-top: 16rpx;
+  letter-spacing: 6rpx;
+}
+/* 微信登录 */
+.wxLogin_mod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 314rpx;
+}
+.wxLogin{
+  position: relative;
+  width:568rpx;
+  height:99rpx;
+  background:linear-gradient(225deg,rgba(255,209,123,1) 0%,rgba(255,139,65,1) 100%);
+  box-shadow:0rpx 10rpx 30rpx rgba(254,160,53,0.47);
+  opacity:1;
+  border-radius:46rpx;
+}
+.wxLogin image{
+  width: 68rpx;
+  height: 68rpx;
+  margin: 16rpx 0 0 154rpx;
+}
+.wxLogin text{
+  color: #fff;
+  font-size: 32rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 224rpx;
+}
+.wxLogin button:not([size='mini']){
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+}
+.wxLogin_mod .phoneLogin{
+  margin-top: 68rpx;
+  font-size: 30rpx;
+  color: #333;
+  letter-spacing: 6rpx;
+}

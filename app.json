@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/my/my",
     "pages/study/study",
     "pages/course/course",
@@ -29,13 +30,13 @@
       },
       {
         "pagePath":"pages/study/study",
-        "text":"课程",
+        "text":"学习",
         "iconPath":"/image/icon_study@2x.png",
         "selectedIconPath":"/image/icon_study_selected@2x.png"
       },
       {
         "pagePath":"pages/my/my",
-        "text":"课程",
+        "text":"我的",
         "iconPath":"/image/icon_my@2x.png",
         "selectedIconPath":"/image/icon_my_selected@2x.png"
       }

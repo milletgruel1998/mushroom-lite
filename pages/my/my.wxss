@@ -1,1 +1,101 @@
-/* pages/my/my.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.myBox{
+  position: relative;
+}
+/* 页面头部模块 */
+.myHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 440rpx;
+  background-color: #ff8d43;
+}
+.myHeader image{
+  width: 176rpx;
+  height: 176rpx;
+  border-radius: 50%;
+  margin-top: 92rpx;
+}
+.myHeader text{
+  font-size: 50rpx;
+  color: #fff;
+  margin-top: 26rpx;
+}
+/* 页面中间模块 */
+.myMiddle{
+  display: flex;
+  width: 686rpx;
+  height: 174rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  position: absolute;
+  top: 398rpx;
+  left: 32rpx;
+}
+.study,.attention,.course{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.study .num,.attention .num,.course .num{
+  font-size: 56rpx;
+  font-weight: 700;
+  margin-top: 32rpx;
+}
+.study .text,.attention .text,.course .text{
+  font-size: 28rpx;
+  color: #A8A8A8;
+  margin-top: 6rpx;
+}
+.study {
+  width: 232rpx;
+  height: 100%;
+}
+.border{
+  margin-top: 62rpx;
+  height: 62rpx;
+  border: 2rpx solid #EBEBEB;
+}
+.attention{
+  flex: 1;
+}
+.course{
+  width: 224rpx;
+  height: 100%;
+}
+/* 页面底部模块 */
+.myBottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 686rpx;
+  height: 616rpx;
+  background-color: #fff;
+  margin: 160rpx auto;
+  border-radius: 12rpx;
+}
+.myBottom view{
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.myBottom text{
+  margin-left: 42rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+}
+.myBottom image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.myBottom .messageTip,.myBottom .teamwork{
+  box-sizing: border-box;
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid #F8F8F8;
+}

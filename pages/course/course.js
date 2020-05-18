@@ -1,26 +1,23 @@
-// pages/course/course.js
-import GetData from '../../utils/request'
+import request from '../../utils/request'
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    courseList:[] // 课程数据
+    courseList:[], // 课程数据
+    courseLevel:['','初级课程','中级课程','高级课程']
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     // 获取课程数据
-    GetData({
-      url:"/api/course/list",
-      callback:(res)=>{
-        this.setData({
-          courseList:res
-        })
-      }
+   let data = await request({
+      url:"/api/course/list"
+    })
+    this.setData({
+      courseList:data.message
     })
   },
 

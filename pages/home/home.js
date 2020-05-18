@@ -1,5 +1,4 @@
-// pages/home/home.js
-import GetData from '../../utils/request'
+import request from '../../utils/request'
 Page({
 
   /**
@@ -24,37 +23,32 @@ Page({
   },
 
   // 获取轮播图图片的方法
-  GetSwiperImg(){
-    GetData({
-      url:'/api/home/swipers',
-      callback:(res)=>{
-          this.setData({
-            swiperList:res
-          })
-      }
+  async GetSwiperImg(){
+    let data = await request({
+      url:"/api/home/swipers"
+    })
+    
+    this.setData({
+      swiperList:data.message
     })
   },
 
   // 获取推荐课程图片的方法
-  GetCourseImg(){
-    GetData({
-      url:'/api/home/course',
-      callback:(res)=>{
-          this.setData({
-            courseList:res
-          })
-      }
+ async GetCourseImg(){
+    let data = await request({
+      url:"/api/home/course"
+    })
+    this.setData({
+      courseList:data.message
     })
   },
   // 获取热门视频的方法
-  GetHotVideo(){
-    GetData({
-      url:'/api/home/video',
-      callback:(res)=>{
-          this.setData({
-            hotVideoList:res
-          })
-      }
+ async GetHotVideo(){
+   let data = await request({
+      url:"/api/home/video"
+    })
+    this.setData({
+      hotVideoList:data.message
     })
   },
   /**

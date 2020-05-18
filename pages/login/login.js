@@ -1,4 +1,5 @@
-// pages/study/study.js
+// pages/login/login.js
+import request from '../../utils/request'
 Page({
 
   /**
@@ -7,29 +8,28 @@ Page({
   data: {
 
   },
-  // 获取用户的通信地址
-  getAddress(){
-    wx.authorize({
-      scope: 'scope.address',
-      success:()=>{
-        wx.chooseAddress({
-          success (res) {
-            console.log(res.userName)
-            console.log(res.postalCode)
-            console.log(res.provinceName)
-            console.log(res.cityName)
-            console.log(res.countyName)
-            console.log(res.detailInfo)
-            console.log(res.nationalCode)
-            console.log(res.telNumber)
+  getUserInfo(event){
+    // console.log(event.detail.userInfo);
+    // 用户的avataiUrl 和 用户昵称
+    let {avatarUrl,nickName} = event.detail.userInfo
+    // console.log(nickName);
+    wx.login({
+      success: async (codeRes) => {
+       let code = codeRes.code
+       console.log("codeRes",code);
+       let data = await request({
+          url:"/api/user/wxlogin",
+          method:"post",
+          data:{
+            code,
+            nickname:nickName,
+            avatar:avatarUrl
           }
         })
-      }
+        console.log("token:",data.token);
+      },
     })
-  },
-  // 获取用户信息
-  getUserInfo(event){
-    console.log(event.detail.userInfo);
+    
   },
   /**
    * 生命周期函数--监听页面加载

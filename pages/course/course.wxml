@@ -3,8 +3,9 @@
     <image src="{{item.icon}}"></image>
     <text class="course_name">{{item.title}}</text>
     <text class="course_intro">{{item.subtitle}}</text>
-    <text class="course_grade" wx:if="{{item.level===1}}">初级课程</text>
+    <!-- <text class="course_grade" wx:if="{{item.level===1}}">初级课程</text>
     <text class="course_grade" wx:elif="{{item.level===2}}">中级课程</text>
-    <text class="course_grade" wx:else="{{item.level===3}}">高级课程</text>
+    <text class="course_grade" wx:else="{{item.level===3}}">高级课程</text> -->
+    <text class="course_grade">{{courseLevel[item.level]}}</text>
   </view>
 </view>

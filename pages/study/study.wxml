@@ -1,2 +1,2 @@
-<!--pages/study/study.wxml-->
-<text>pages/study/study.wxml</text>
+<button bindtap="getAddress">获取通信地址</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>

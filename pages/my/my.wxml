@@ -1,2 +1,53 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="myBox">
+  <!-- 页面头部模块 -->
+  <view class="myHeader">
+    <image src="../../image/big141000.jpg"></image>
+    <text>小米粥</text>
+  </view>
+  <!-- 页面中间模块 -->
+  <view class="myMiddle">
+    <view class="study">
+      <text class="num">15</text>
+      <text class="text">累计学习小时</text>
+    </view>
+    <view class="border"></view>
+    <view class="attention">
+      <text class="num">6</text>
+      <text class="text">我的关注</text>
+    </view>
+    <view class="border"></view>
+    <view class="course">
+      <text class="num">3</text>
+      <text class="text">我的课程</text>
+    </view>
+  </view>
+  <!-- 页面底部模块 -->
+  <view class="myBottom">
+    <!-- 学习历史 -->
+    <view class="studyHistory">
+      <text>学习历史</text>
+      <image src="../../image/arrow@2x.png"></image>
+    </view>
+    <!-- 消息提醒 -->
+    <view class="messageTip">
+      <text>消息提醒</text>
+      <image src="../../image/arrow@2x.png"></image>
+
+    </view>
+    <!-- 清除缓存 -->
+    <view class="clear">
+      <text>清除缓存</text>
+      <image src="../../image/arrow@2x.png"></image>
+    </view>
+    <!-- 商务合作 -->
+    <view class="teamwork">
+      <text>商务合作</text>
+      <image src="../../image/arrow@2x.png"></image>
+    </view>
+    <!-- 在线客服 -->
+    <view class="service">
+      <text>在线客服</text>
+      <image src="../../image/arrow@2x.png"></image>
+    </view>
+  </view>
+</view>
