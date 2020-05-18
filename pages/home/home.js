@@ -35,6 +35,7 @@ Page({
 
   // 获取推荐课程图片的方法
  async GetCourseImg(){
+   // await修饰promise对象返回的值，就是promise.then的数据
     let data = await request({
       url:"/api/home/course"
     })

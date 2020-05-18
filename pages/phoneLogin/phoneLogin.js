@@ -1,5 +1,4 @@
-// pages/login/login.js
-import request from '../../utils/request'
+// pages/phoneLogin/phoneLogin.js
 Page({
 
   /**
@@ -8,26 +7,7 @@ Page({
   data: {
 
   },
-  getUserInfo(event){
-    // 用户的avataiUrl 和 用户昵称
-    let {avatarUrl,nickName} = event.detail.userInfo
-    wx.login({
-      success: async (codeRes) => {
-       let code = codeRes.code
-       let data = await request({
-          url:"/api/user/wxlogin",
-          method:"post",
-          data:{
-            code,
-            nickname:nickName,
-            avatar:avatarUrl
-          }
-        })
-        console.log("token:",data.token);
-      },
-    })
-    
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

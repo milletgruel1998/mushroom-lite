@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/phoneLogin/phoneLogin",
     "pages/login/login",
     "pages/my/my",
     "pages/study/study",

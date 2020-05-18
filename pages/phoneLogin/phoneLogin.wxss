@@ -1,0 +1,75 @@
+page{
+  background-color: #f8f8f8;
+}
+/* 手机号验证头部 */
+.phoneVerify{
+  display: flex;
+  flex-direction: column;
+}
+.phoneVerify text:nth-child(1){
+  font-size:82rpx;
+  font-weight:800;
+  color:#333;
+  margin: 102rpx 0 0 64rpx;
+}
+.phoneVerify text:nth-child(2){
+  font-size: 30rpx;
+  color: #a8a8a8;
+  margin: 10rpx 0 0 66rpx;
+}
+/* input输入框模块 */
+.input_mod{
+  position: relative;
+  width: 620rpx;
+  margin: 136rpx auto;
+}
+.getVerify{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 164rpx;
+  height: 56rpx;
+  border: 2px solid #a8a8a8;
+  border-radius: 40rpx;
+  color: #a8a8a8;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 56rpx;
+  cursor: pointer;
+}
+.line{
+  width:620rpx;
+  border:2rpx solid #e9e9e9;
+  box-sizing: border-box;
+}
+.firstInput{
+  display: inline-block;
+  margin-top: 12rpx;
+}
+.firstLine{
+  margin-top: 28rpx;
+  margin-bottom: 80rpx;
+}
+.secondLine{
+  margin-top: 30rpx;
+}
+/* 验证按钮 */
+.verifyBtn{
+  width:568rpx;
+  height:99rpx;
+  line-height: 99rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  margin: 239rpx auto 0;
+  background:linear-gradient(225deg,rgba(255,209,123,1) 0%,rgba(255,139,65,1) 100%);
+  box-shadow:0 10rpx 30rpx rgba(254,160,53,0.47);
+  border-radius:46rpx;
+}
+/* 页面底部 */
+.bottom{
+  font-size: 20rpx;
+  color: #a8a8a8;
+  text-align: center;
+  margin-top: 150rpx;
+}
