@@ -6,14 +6,14 @@
   </view>
   <!-- input输入框模块 -->
   <view class="input_mod">
-    <input class="firstInput" placeholder="请输入您的手机号" type="number"></input>
-    <view class="getVerify">获取验证码</view>
+    <input class="firstInput" bindblur="getPhoneNumber" maxlength="11" placeholder="请输入您的手机号" type="number"></input>
+    <view class="getVerify" bindtap="getVerify">{{tip}}</view>
     <view class="line firstLine"></view>
-    <input class="secondInput" placeholder="请输入验证码"></input>
+    <input class="secondInput" bindblur="getVcode" maxlength="4" placeholder="请输入验证码"></input>
     <view class="line secondLine"></view>
   </view>
   <!-- 验证按钮 -->
-  <view class="verifyBtn">
+  <view bindtap="nowVerify" class="verifyBtn">
     <text>立即验证</text>
   </view>
   <!-- 页面底部 -->

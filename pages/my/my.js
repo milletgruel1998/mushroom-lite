@@ -1,20 +1,35 @@
-// pages/my/my.js
+import request from '../../utils/request'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    myInfo:{} // 个人信息
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
+    
   },
-
+  // 发送请求，获取个人信息
+ async getMyInfo(token){
+   let data = await request({
+      url:'/api/my/info',
+      header:{
+        Authorization:token
+      }
+    })
+    console.log(data);
+    this.setData({
+        myInfo:data.message
+    })
+    console.log(this.data.myInfo);
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -26,7 +41,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let token = wx.getStorageSync('token')
+    // 如果token不存在，跳转登录页
+    if(!token){
+      wx.navigateTo({
+        url: '/pages/login/login'
+      })
+    }else{
+      // 如果token存在,发送请求
+      this.getMyInfo(token)
+    }
   },
 
   /**

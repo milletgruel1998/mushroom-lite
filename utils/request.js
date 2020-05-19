@@ -13,6 +13,7 @@ function request(params){
       url: BASE_URL+params.url,
       method:params.method,
       data:params.data,
+      header:params.header,
       success:(res)=>{
         let { status } = res.data
         if(!status){

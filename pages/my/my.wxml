@@ -1,8 +1,8 @@
 <view class="myBox">
   <!-- 页面头部模块 -->
   <view class="myHeader">
-    <image src="../../image/big141000.jpg"></image>
-    <text>小米粥</text>
+    <image src="{{myInfo.avatar}}"></image>
+    <text>{{myInfo.nickname}}</text>
   </view>
   <!-- 页面中间模块 -->
   <view class="myMiddle">

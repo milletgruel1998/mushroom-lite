@@ -91,6 +91,13 @@
 					"pathName": "pages/study/study",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/phoneLogin/phoneLogin",
+					"pathName": "pages/phoneLogin/phoneLogin",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
