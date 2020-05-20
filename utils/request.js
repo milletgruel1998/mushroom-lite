@@ -17,7 +17,7 @@ function request(params){
       success:(res)=>{
         let { status } = res.data
         if(!status){
-          // 请求成功后，将message返回出去
+          // resolve：异步操作成功，将结果作为参数传递出去
           resolve(res.data)
         }
       },

@@ -30,6 +30,12 @@ Page({
     console.log(this.data.myInfo);
     
   },
+    // 客服电话
+    service(){
+      wx.makePhoneCall({
+        phoneNumber: '10086',
+      })
+    },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

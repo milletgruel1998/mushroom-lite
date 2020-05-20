@@ -45,7 +45,7 @@
       <image src="../../image/arrow@2x.png"></image>
     </view>
     <!-- 在线客服 -->
-    <view class="service">
+    <view bindtap="service" class="service">
       <text>在线客服</text>
       <image src="../../image/arrow@2x.png"></image>
     </view>
